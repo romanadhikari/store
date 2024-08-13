@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Study Template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+   
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    float: left;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #e74c3c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Book Cards */
+.books {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.book-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+.contact {
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.ads{
+    color: rgb(0, 183, 255);
+    font-size: large;
+    font-weight: 200;
+}
+
+
+
+
+    </style>
+ 
+    <header><nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://cdn.icon-icons.com/icons2/504/PNG/512/pdf-book_icon-icons.com_49237.png" alt="Logo" style="width:100px;" class="rounded-pill">
+          </a>
+        </div>
+      </nav>
+       
+        <div class="container">
+            
+            <h1>Book Study Platform</h1>
+            <nav>
+                
+                <ul>
+                    <b>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Books</a></li>
+                    <li><a href="payment.html">payment</a></li>
+                </b>
+                </ul>
+                <div class="ads">
+                    <marquee>अब हरेक दिन नेपाली ब्लग हेर्नको लागि युट्युबमा 'रोमन ब्लग 0504' हेर्न सक्नुहुन्छ।" Catch Nepali vlogs daily on YouTube at 'Roman Vlog 0504</marquee>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to the Book Study Platform</h2>
+                <p>Explore our extensive collection of books and study materials.</p>
+                <a href="book.html" class="cta-button">Browse Books</a>
+            </div>
+        </section>
+
+        <section id="books" class="books">
+            <div class="container">
+                <h2>Featured Books</h2>
+                <div class="book-info">
+                   
+                <div class="book-card">
+                     <h3>Rich Dad Poor Dad </h3>
+                    <p>Learn essential financial lessons through the contrasting views of two father figures, guiding you to make smarter money decisions.</p>
+                    <img src="https://media.licdn.com/dms/image/C5612AQFYZcWytghloA/article-cover_image-shrink_600_2000/0/1646340629095?e=2147483647&v=beta&t=3S6-DYfLZVzJ3PQc64EdMA2z-TzjGhyKSNhy4f8T6eU">
+                    <br>
+                    <a href="book.html" class="cta-button">Read More</a>
+                     </div>
+                     <br>
+                <div class="container">
+                    <div class="book-info">
+                     
+                <div class="book-card">
+                    <h3>Atomic Habits</h3>
+                    <p>Discover how small changes can lead to big improvements in your study habits and daily routines.</p>
+                    <img src="https://media.licdn.com/dms/image/D4D12AQHZJRikGoFIKw/article-cover_image-shrink_720_1280/0/1696425885734?e=2147483647&v=beta&t=GpXawCAMJqzTZw1qYtR5FJNCAITvrAxqFTSrW9q7jdw">
+                    <br>
+                    <a href="book.html" class="cta-button">Read More</a>
+                     </div>
+                     <br>
+                     <br>
+                 <div class="book-card">
+                    
+                    <h3>The Psychology of Money</h3>
+                    <p>Understand the emotional side of money and how it influences your financial decisions, helping you develop a healthier relationship with finances.</p>
+                    <img src="https://media.licdn.com/dms/image/C4E12AQF9gPMY9HwP7g/article-cover_image-shrink_720_1280/0/1623380990697?e=2147483647&v=beta&t=FEy2UGPue--SArgwp1jouG-DjkDfAjv9xjDO-pUOBz8">
+                    <br>
+                    <a href="book.html" class="cta-button">Read More</a>
+                     </div> 
+                     <br>
+                     <br>
+                <div class="book-card">
+                    <h3>The Power of Your Subconscious Mind</h3>
+                    <p>Harness the power of your mind to overcome obstacles and achieve your academic and personal goals through positive thinking.</p>
+                    <img src="https://static-01.daraz.com.np/p/055b5c376e66b5e617598a81bd526b7f.jpg">
+                    <br>
+                    <a href="book.html" class="cta-button">Read More</a>
+                   
+                </div> 
+                <br>
+                <br>
+                <div class="book-card">
+                    <h3>The Subtle Art of Not Giving a F*ck </h3>
+                    <p>Focus on what really matters in your life and let go of unnecessary stress and societal pressures.</p>
+                    <img src="https://markmanson.net/wp-content/themes/mm-main/images/books-subtle-art.png">
+                    <br>
+                    <a href="book.html" class="cta-button">Read More</a>
+                    
+                </div>
+                <br>
+                <br>
+                <div class="book-card">
+                    <h3>How to Talk to Anyone</h3>
+                    <p>Enhance your communication skills and build better relationships with peers and professors through practical social tips.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNAzWNVvsf2vwSS_XPA-w-byEVe5PWc5fhg&s">
+                    <br>
+                    <a href="book.html" class="cta-button">Read More</a>
+                     </div> 
+                     <br>
+                <div class="book-card">
+                    <h3>How to Win Friends and Influence People </h3>
+                    <p>Master the art of effective communication and influence to build strong connections and succeed in group projects and networking.</p>
+                    <img src="https://uniathenaprods3.uniathena.com/s3fs-public/insights-article/howtowinfriendsinfluencepeople_0.jpg">
+                    <br>
+                    <br>
+                    <a href="book.html" class="cta-button">Read More</a>
+                    
+                </div> 
+                <br>
+                <div class="book-card">
+                    <h3>Mindset: The New Psychology of Success </h3>
+                    <p>Embrace a growth mindset to overcome challenges and improve your academic performance and personal development.</p>
+                    <img src="https://miro.medium.com/v2/resize:fit:720/1*7GWB0Kt5WzbLTgEoL_Ueag.jpeg">
+                    
+                    <a href="book.html" class="cta-button">Read More</a>
+                    
+                </div> 
+                <br><br>
+                <div class="book-card">
+                    <h3>As a Man Thinketh</h3>
+                    <p>Discover how your thoughts shape your reality and learn to cultivate a positive mindset for academic and personal success.</p>
+                    <img src="https://covers.storytel.com/jpg-640/9789354622113.46e7a62c-66fa-4c51-ab63-5c95b725699d?optimize=high">
+                    <br>
+                    <a href="book.html" class="cta-button">Read More</a>
+                  
+                </div> 
+                <br>
+                <div class="book-card">
+                    <h3>How to Invest in the Stock Market </h3>
+                    <p>Get a beginner’s guide to understanding the stock market and start building your investment skills for the future.</p>
+                    <img src="https://img.drz.lazcdn.com/static/np/p/d467327c5ae0108ee773326b8885a2d5.jpg_720x720q80.jpg">
+                    <br>
+                    <a href="book.html" class="cta-button">Read More</a>
+                    
+                </div> 
+                <!-- Add more book cards as needed -->
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Book Study Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

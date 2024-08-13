@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Overview</title>
+    <link rel="stylesheet" href="payment-styles.css">
+</head>
+<style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Payment Summary Section */
+.payment-summary {
+    background: #fff;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.payment-summary h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.summary-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: auto;
+    max-width: 400px;
+}
+
+.summary-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.details {
+    margin-bottom: 1.5rem;
+}
+
+.details p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.status p {
+    font-size: 1.1rem;
+    color: #e67e22;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+h4{
+    color: red;
+    border-color: black;
+    background-color: black;
+    width: auto;
+    height: auto;
+    font-size: x-large;
+}
+ .p2{
+    color: lightgreen;
+    background-color: brown;
+   width: auto;
+   height: auto;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.copy {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#statusMessage {
+    margin-top: 10px;
+    color: green;
+}
+input{
+    width: 210px;
+    height: 80px;
+    font-size: large;
+    color: rgb(0, 38, 255);
+    margin-left: center;
+    padding-left: 12px;
+    padding-right: 12px;
+   border-radius: 30px;
+   border-color: rgb(0, 195, 255);
+   box-sizing: border-box;
+   overflow: hidden;
+    white-space: nowrap;
+}
+img{
+    width: 200px;
+    height: 100px;
+    border-radius: 100px;
+}
+.ads{
+    color: rgb(0, 183, 255);
+    font-size: large;
+    font-weight: 200;
+}
+.famous{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+font-size: larger;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Payment Gateway</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Books</a></li>
+                    <li><a href="payment.html">payment</a></li>
+                </ul>
+                <br>
+                <br><div class="ads">
+                    <marquee>
+                        <img src="https://yt3.googleusercontent.com/X4Z0K_Ru8coctObespqzT-s7nGysv3QPz4WDiZ6O-w9gVi53xVwRi633T4GD0ap2LGj2RQMBf5s=s900-c-k-c0x00ffffff-no-rj">
+                         हरेक दिन नेपाली ब्लग हेर्नको लागि युट्युबमा 'रोमन ब्लग 0504' हेर्न सक्नुहुन्छ।" Catch Nepali vlogs daily on YouTube at 
+                         'Roman Vlog 0504 <img src="https://yt3.googleusercontent.com/X4Z0K_Ru8coctObespqzT-s7nGysv3QPz4WDiZ6O-w9gVi53xVwRi633T4GD0ap2LGj2RQMBf5s=s900-c-k-c0x00ffffff-no-rj">
+                        </marquee>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="payment-summary">
+            <div class="container">
+                <h2>Payment Overview</h2>
+                <div class="summary-card">
+                    <h3>Order Summary</h3>
+                    <div class="details">
+                        <p><strong>Amount:</strong> RS.20</p>
+                        <div class="copy">
+                            <p>Order Id / Book Name </p>
+                            
+                            <br>
+                          <input type="tel" placeholder="Order Id / Book Name ">
+                          
+                        <p>
+                        </div>
+                            <br> <strong>Payment Method:</strong> <b>Esewa</b></p>
+                    </div>
+                    <div class="status">
+                    
+                        <p>Your payment </p>
+                        
+                   
+                    </div>
+                
+                    
+                   
+                    <a href="https://forms.gle/6QSr6MjfW3iXF22z7" class="cta-button">payment</a>
+                    <marquee>
+                    
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/ff/46/09ff46b0-348e-093e-f5c8-b7c357b46509/ReleaseAppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Esewa_logo.webp">
+                    </marquee>
+                </div>
+            </div>
+        </section>
+    </main>
+<div class="img">
+ <div class="famous">
+    Most famous Nepalese person
+ </div>
+    <marquee>
+        <img src="https://resize.indiatvnews.com/en/resize/newbucket/400_-/2024/05/befunky-collage-2024-05-23t161201-1716460926.jpg">
+        <img src="https://www.maasita.com/assets/img/janki-mata.png">
+       <img src="https://qph.cf2.quoracdn.net/main-qimg-0fe9269ea96b2abae48c8af5d0b42580-pjlq">
+        <img src="https://miro.medium.com/v2/resize:fit:252/1*7QO0m--qbgLtyx16Y-2lhw.jpeg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgthrxgso2WPVacQY-phiRPC6jPStzQ4qnG01OaderCuS8HtUfjiFkCS4RPI0H_tDjwrQ&usqp=CAU">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Ani_Ch%C3%B6ying_Dr%C3%B6lma_2011.jpg">
+        
+        <img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQw9bLgyGj5wAePQMSI6dUSiZ7omvmwtkBLDdM0cxQDxJL82ZR1NsJx3h0sm8VvqdFc">
+    <img src="https://myrepublica.nagariknetwork.com/uploads/media/SandukRuit_20190922163328.jpg">
+    <img src="https://whatthenepal.com/wp-content/uploads/2024/04/download-1-1.jpeg">
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5RCwvBqi_amao7iyMzcGDTKktTT6wsZAkSO82ot8DjYoEzBxP">
+    <img src="https://i0.wp.com/www.nepallivetoday.com/wp-content/uploads/2022/05/Balen-Shah.png?fit=1280%2C720&ssl=1">
+    
+</marquee>
+   </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Payment Gateway. All rights reserved.</p>
+        </div>
+    </footer>
+  
+</body>
+</html>

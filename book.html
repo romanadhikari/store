@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="book-styles.css">
+</head>
+<style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    float: left;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Book Details Section */
+.book-details {
+    background: #fff;
+    padding: 2rem 0;
+}
+
+.book-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-cover {
+    flex: 1;
+    max-width: 300px;
+}
+
+.book-cover img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.book-description {
+    flex: 2;
+    max-width: 600px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.book-description h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.author {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.summary {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #e74c3c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+p2{
+    color: #c0392b;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: larger;
+    font-style: normal;
+}
+p3{
+    color: #00b7ff;
+ font-family: fantasy;
+    font-weight: bolder;
+    font-size: larger;
+    font-style: normal;  
+}
+.ads{
+    color: rgb(0, 183, 255);
+    font-size: large;
+    font-weight: 200;
+}
+h3{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: #257291;
+    color: white;
+    width: 10cm;
+    height: 0.8cm;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 12cm;
+    
+}
+.gmail{
+color: #00b7ff;
+background-color: antiquewhite;
+width: 5cm;
+height: 2cm;
+border-radius: 50px;
+margin-left: 12cm;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Book Study Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Book</a></li>
+                    <li><a href="payment.html">payment</a></li>
+                </ul>
+                <div class="ads">
+                    <marquee>अब हरेक दिन नेपाली ब्लग हेर्नको लागि युट्युबमा 'रोमन ब्लग 0504' हेर्न सक्नुहुन्छ।" Catch Nepali vlogs daily on YouTube at 'Roman Vlog 0504</marquee>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://media.licdn.com/dms/image/C5612AQFYZcWytghloA/article-cover_image-shrink_600_2000/0/1646340629095?e=2147483647&v=beta&t=3S6-DYfLZVzJ3PQc64EdMA2z-TzjGhyKSNhy4f8T6eU" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>Rich Dad Poor Dad</h2>
+                        <p class="author">Robert T. Kiyosaki.</p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>496958</p3> 
+                        <br>
+                        <hr>
+                        <b>conclusions</b>
+                        <p class="summary">
+                            Master the art of wealth-building through contrasting financial philosophies for a richer future.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://media.licdn.com/dms/image/D4D12AQHZJRikGoFIKw/article-cover_image-shrink_720_1280/0/1696425885734?e=2147483647&v=beta&t=GpXawCAMJqzTZw1qYtR5FJNCAITvrAxqFTSrW9q7jdw" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2> Atomic Habits</h2>
+                        <p class="author">James Clear</p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>799041</p3> 
+                        <br>
+                        <hr>
+                        <b>conclusions</b>
+                        <p class="summary">Transform your life with small, powerful habits that lead to big changes.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main><main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://media.thuprai.com/front_covers/psychology-of-money.jpg" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>The Psychology of Money </h2>
+                        <p class="author">Morgan Housel</p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>159136 </p3> 
+                        <br>
+                        <hr>
+                        <b>conclusions</b>
+                        <p class="summary">Unlock the secrets of how your mindset shapes your financial success.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://static-01.daraz.com.np/p/055b5c376e66b5e617598a81bd526b7f.jpg" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>The Power of Your Subconscious Mind </h2>
+                        <p class="author">Joseph Murphy</p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>271828</p3> 
+                        <br>
+                        <hr>
+                        <b>conclusions</b>
+                        <p class="summary">Tap into your mind's hidden power to achieve your dreams and overcome challenges.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://media.thuprai.com/products/subtle_fuck.jpg" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>The Subtle Art of Not Giving a F*ck </h2>
+                        <p class="author">Mark Manson</p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>24422</p3> 
+                        <br>
+                        <hr>
+                        <b>conclusions</b>
+                        <p class="summary">Focus on what truly matters and let go of unnecessary stress for a more meaningful life.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNAzWNVvsf2vwSS_XPA-w-byEVe5PWc5fhg&s" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>How to Talk to Anyone </h2>
+                        <p class="author"> Leil Lowndes</p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>465024</p3> 
+                        <br>
+                        <hr>
+                        <b>conclusions</b>
+                        <p class="summary">Master the art of conversation and build lasting connections with ease.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://miro.medium.com/v2/resize:fit:893/1*OtxsMJ5huAFwANLR6lONyw.jpeg" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>How to Win Friends and Influence People</h2>
+                        <p class="author">Dale Carnegie</p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>94625</p3> 
+                        <br>
+                        <hr>
+                        <b>conclusions</b>
+                        <p class="summary">Enhance your interpersonal skills and influence others positively for lasting relationships.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://static-01.daraz.com.np/p/a9b27e486bff48aa151b5044903d0063.jpg" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>Mindset: The New Psychology of Success</h2>
+                        <p class="author">Carol S. Dweck</p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>05040201</p3> 
+                        <br>
+                        <hr>
+                        <b>conclusions</b>
+                        <p class="summary">Adopt a growth mindset to unlock your potential and achieve greater success.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://static-01.daraz.com.np/p/b8db74eb51f199bef687be2edb6451e8.jpg" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>As a Man Thinketh</h2>
+                        <p class="author">James Allen</p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>172839</p3> 
+                        <br>
+                        <hr>
+                        <b>conclusions</b>
+                        <p class="summary">Discover how your thoughts shape your destiny and learn to think positively for success.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="book-details" class="book-details">
+            <div class="container">
+                <div class="book-info">
+                    <div class="book-cover">
+                        <img src="https://media.thuprai.com/__sized__/front_covers/How_to_Invest_in_Stock_Market_-f-thumbnail-280x405-70.jpg" alt="Book Cover">
+                    </div>
+                    <div class="book-description">
+                        <h2>How to Invest in the Stock Market </h2>
+                        <p class="author">  Rabindra Bhattarai </p>
+                        <p class="price">Price: RS.20</p>
+                        <hr>
+                        <p2>Order Id : </p2> <p3>2400</p3> 
+                        <br>
+                        <hr>
+                       <b>conclusions</b>
+                        <p class="summary"> Start building your investment skills with practical advice for navigating the stock market.</p>
+                        <a href="payment.html" class="cta-button">Read Now</a>
+                    </div><BR>
+                        <br>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+
+    <h3>
+        Supporting Partner
+    </h3>
+         <div class="partner">
+        <marquee>
+           
+            <img src="https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/435559837_409452338390100_1216493704682813908_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=2z_KczbirrIQ7kNvgFbeDkc&_nc_ht=scontent.fktm8-1.fna&oh=00_AYA1ih45ZkHrg1raS8H0dAQvgOdTcRqc9CmPapiJZA0kZQ&oe=66C0E29F" alt="Logo" style="width:100px;" class="rounded-pill">
+            &nbsp;&nbsp;&nbsp;
+            <img src="https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/422062528_1105698777223086_6250227903111784183_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=DhHED9h_VKIQ7kNvgEMFFl_&_nc_ht=scontent.fktm8-1.fna&oh=00_AYBC7ppwM-6pMVRsxV_wiJo4EYsw9CA_2RbdhoRqyhVNuw&oe=66C1126F" alt="Logo" style="width:100px;" class="rounded-pill">
+            Looking to promote your product? Let’s make it shine together! Reach out to us at romanadhikari05040@gmail.com, and let's start creating something amazing!"
+       
+        </marquee>
+         </div>
+<br>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Book Study Platform. All rights reserved.<br>
+                <br>
+               <div class="gmail">
+                contact  <p> <a href="mailto:romanadhikari05040@gmail.com">contact us via email</a>.</p>
+
+            </p>
+               </div>
+            
+        </div>
+    
+    </footer>
+
+    <script src="book-scripts.js">
+        // Smooth scrolling for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
